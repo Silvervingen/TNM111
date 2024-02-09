@@ -81,14 +81,9 @@ function focusPlusContext(data) {
      * Task 5 - Set the axes scales, both for focus and context.
      */
     xScale.domain([minDate, maxDate]);
-
     yScale.domain([maxMag, minMag]);
-
     navXScale.domain([minDate, maxDate]);
-
     navYScale.domain([minMag, maxMag]);
-
-
 
     //<---------------------------------------------------------------------------------------------------->
 
