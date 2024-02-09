@@ -65,13 +65,7 @@ function worldMap(data) {
      * Also add a class called mapcircle and set opacity to 0.4
      */
     //features for the points
-    let feature = g
-        .selectAll("circle")
-        .data(data.features)
-        .enter()
-        .append("circle")
-        .attr("class", "mapcircle")
-        .style("opacity", .5);
+    let feature = g.selectAll("circle").data(data.features).enter().append("circle").attr("class", "mapcircle").style("opacity", .5);
 
     /**
      * Task 20 - Call the plot function with feature variable
