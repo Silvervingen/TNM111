@@ -1,0 +1,100 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align-last: left;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  padding: 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  margin: 0;
+}
+
+h3{
+  text-align-last: left;
+}
+
+p{
+  text-align-last: left;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+  height: 95vh;
+  display: flex;
+  align-items: flex-start;
+}
+
+#control {
+  flex: none;
+  width: 10%;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(172, 172, 172);
+}
+
+#graph1 {
+  flex: 1;
+  height: 90vh;
+  margin-left: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+#view1 {
+  height: 100%;
+  position: relative;
+}
+
+#svg1 {
+  width: 100%;
+  height: 100%;
+}
+
+#graph2 {
+  flex: 1;
+  height: 90vh;
+  margin-left: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+#view2 {
+  height: 100%;
+  position: relative;
+}
+
+#svg2 {
+  width: 100%;
+  height: 100%;
+}
+
+.links1,
+.nodes1 {
+border: 2px solid black;
+}
+
+.links2,
+.nodes2 {
+  border: 2px;
+}
+
+

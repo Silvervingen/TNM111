@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="loadData()">
+    <h2>Star Wars characters relation network</h2>
+    <div class="container">
+      <div id="control">
+        <h3>Interactions</h3>
+        <p>Episodes only affects left graph and slider only controls right graph</p>
+        <h3>Episodes shown </h3>
+        <label class="">Episode 1
+          <input type="checkbox" id="0" checked="checked" onclick="checkbox(this)">
+          <span class=""></span>
+        </label>
+        <label class="">Episode 2
+          <input type="checkbox" id="1" checked="checked" onclick="checkbox(this)">
+          <span class=""></span>
+        </label>
+        <label class="">Episode 3
+          <input type="checkbox" id="2" checked="checked" onclick="checkbox(this)">
+          <span class=""></span>
+        </label>
+        <label class="">Episode 4
+          <input type="checkbox" id="3" checked="checked" onclick="checkbox(this)">
+          <span class=""></span>
+        </label> 
+        <label class="">Episode 5
+          <input type="checkbox" id="4" checked="checked" onclick="checkbox(this)">
+          <span class=""></span>
+        </label>
+        <label class="">Episode 6
+          <input type="checkbox" id="5" checked="checked" onclick="checkbox(this)">
+          <span class=""></span>
+        </label>
+        <label class="">Episode 7
+          <input type="checkbox" id="6" checked="checked" onclick="checkbox(this)">
+          <span class=""></span>
+        </label>
+
+        <h3>Minimum amount of scene appearances</h3>
+        <input type="range" min="1" max="150" value="1" id="filterslider" onchange="slider(this)">
+        <div id="slidertext">1</div>
+      </div>
+      
+      <div id="graph1">
+        <div id="view1">
+          <svg id="svg1" width="400" height="600">
+            <g class="links1"></g>
+            <g class="nodes1"></g>
+          </svg>
+        </div>
+      </div>
+      <div id="graph2">
+        <div id="view2">
+          <svg id="svg2" width="400" height="600">
+            <g class="links2"></g>
+            <g class="nodes2"></g>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <script src="nodelink.js"></script>
+  </body>
+</html>
